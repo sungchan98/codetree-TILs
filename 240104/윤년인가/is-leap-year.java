@@ -11,7 +11,7 @@ public class Main {
                 System.out.println("false");
             }else if((y % 100 == 0) && (y % 400 == 0)){
                 System.out.println("true");
-            }System.out.println("true");
+            }
         }else{
             System.out.println("false");
         }
