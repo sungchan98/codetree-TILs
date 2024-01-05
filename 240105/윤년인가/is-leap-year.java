@@ -11,7 +11,7 @@ public class Main {
       if (y % 100 != 0) {
         System.out.println("true");
       } else {
-        System.out.println("flase");
+        System.out.println("false");
       }
     }
   }
