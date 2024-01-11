@@ -12,7 +12,9 @@ public class Main {
     a %= b;
 
     for (int i = 1; i <= 20; i++) {
-      System.out.print(a);
+       a *= 10;
+       System.out.print(a / b);
+       a %= b;
     }
   }
 }
