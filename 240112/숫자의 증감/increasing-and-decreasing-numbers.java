@@ -12,7 +12,7 @@ public class Main {
                 System.out.print(i + " ");
             }
         }else if(c.equals("D")){
-            for(int i = n;i >= 1; i++) {
+            for(int i = n;i >= 1; i--) {
                 System.out.print(i + " ");
             }
         }
