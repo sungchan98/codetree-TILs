@@ -6,15 +6,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int sum = 0;
-        for(int i = 1; i <= 100; i++){
-            System.out.println(sum);
-            sum += i;
-            
+        for(int i = 1; i <= 100; i++){   
+             sum += i;    
             if (sum >= n) {
-                
-                break;
-            }
+                System.out.println(i);
+                break; 
+            }       
         }
-        
+       
     }
 }
