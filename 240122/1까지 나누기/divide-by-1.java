@@ -7,13 +7,14 @@ public class Main {
     int n = sc.nextInt();
     int count = 0;
 
-    for (int i = 1; i <= 5000; i++) {
+    for (int i = 1; i <= n; i++) {
       count++;
-      n /= i;
-      if (n / i <= 1) {
+      if ((n / i) <= 1) {
         break;
       }
+      n /= i;
     }
-    System.out.println(count+1);
+
+    System.out.println(count + 1);
   }
 }
