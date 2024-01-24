@@ -9,6 +9,10 @@ public class Main {
     int cnt = 0;
 
     while (true) {
+      if (n == 1) { 
+        break;
+      }
+      
       if (n % 2 == 0) {
         cnt++;
         n /= 2;
@@ -16,9 +20,7 @@ public class Main {
         cnt++;
         n = (n * 3) + 1;
       }
-      if (n == 1) { 
-        break;
-      }
+
     }
     System.out.println(cnt);
   }
