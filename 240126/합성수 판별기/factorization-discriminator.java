@@ -8,10 +8,11 @@ public class Main {
     boolean satisfied = false;
 
     for (int i = 1; i <= n; i++) {
-      if (i % n == 0 && i / n == 1) {
+      if (n % i == 0) {
         satisfied = true;
       }
     }
+
     if (satisfied == true) {
       System.out.println("C");
     } else {
