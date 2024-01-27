@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         boolean a = false;
-        for(int i=2; i <=n; i++){
+        for(int i=2; i <=1000; i++){
             if(i % n == 0){
                 a = true;
             }
