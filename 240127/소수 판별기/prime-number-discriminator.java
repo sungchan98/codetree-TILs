@@ -11,7 +11,7 @@ public class Main {
                 a = true;
             }
         }
-        if(a = true) {
+        if(a == true) {
             System.out.println("P");
         }else {
             System.out.println("C");
