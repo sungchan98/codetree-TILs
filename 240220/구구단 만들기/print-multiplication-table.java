@@ -12,7 +12,7 @@ public class Main {
             for(int j=b;j>=a;j=j-2){
                 System.out.printf("%d * %d = %d ", j,i,i*j);
             
-            if(j>=b-a && !(a==b)){
+            if(j>a){
                 System.out.print("/ ");
             }
            
