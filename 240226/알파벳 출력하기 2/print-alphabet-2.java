@@ -14,6 +14,9 @@ public class Main {
             }
             for(int j=1;j<=n-i;j++){
                 System.out.print((char)cnt++ + " ");
+                if(cnt == 91){
+                    cnt=65;
+                }
             }
             System.out.println();
         }
