@@ -16,7 +16,7 @@ public class Main {
         }
         if(sum/n >= 4.0){
             System.out.printf("%.1f\n",(double)sum/n);
-             System.out.println("perfect");
+             System.out.println("Perfect");
         } else if(sum/n >= 3.0)  {
             System.out.printf("%.1f\n",(double)sum/n);
             System.out.println("Good");
