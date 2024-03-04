@@ -13,7 +13,7 @@ public class Main {
                 sum += arr[i];
                 cnt++;
             }
-            if(arr[i] = 0){
+            if(arr[i] == 0){
                 break;
             }
         }
