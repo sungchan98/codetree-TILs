@@ -10,17 +10,12 @@ public class Main {
             arr[i] = sc.nextInt();
             
             if(arr[i] == 0){
+                sum += arr[i-1];
+                sum += arr[i-2];
+                sum += arr[i-3];
                 break;
             }
-            
-            sum += arr[0]; 
-            sum += arr[1];
-            sum += arr[2];
         }
-        // System.out.print(arr[0]);
-        // System.out.print(arr[1]);
-        // System.out.print(arr[2]);
-        
-        System.out.print(arr[0]+arr[1]+arr[2]);
+        System.out.print(sum);
     }
 }
