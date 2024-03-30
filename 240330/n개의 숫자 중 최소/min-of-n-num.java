@@ -9,16 +9,19 @@ public class Main {
 
         int n = sc.nextInt();
         int arr[] = new int[n];
-        int cnt = 0;
-        int minval = INT_MAX;
+        int cnt =0;
+        int minVal = INT_MAX;
+
 
         for(int i=0; i<n; i++){
             arr[i] = sc.nextInt();
-            if(minval > arr[i]) {
-                minval = arr[i];
+            if(minVal > arr[i]) {
+                minVal = arr[i];
+                cnt=1;
+            }else if(minVal == arr[i]){
                 cnt++;
             }
         }
-        System.out.print(minval + " " + cnt);
+        System.out.print(minVal + " " + cnt);
     }
 }
