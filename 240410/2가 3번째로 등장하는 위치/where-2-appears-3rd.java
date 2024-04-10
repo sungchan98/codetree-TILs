@@ -5,8 +5,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        
-
+    
         int arr[] = new int[100];
         int cnt=0;
         int idx = -1;
@@ -16,9 +15,11 @@ public class Main {
                 cnt++;
             }
             if(cnt==3){
-                idx=i+1;
+                idx=i;
+                break;
             }
         }
-        System.out.println(idx);
+        //System.out.println(cnt);
+        System.out.println(idx+1);
     }
 }
