@@ -7,12 +7,12 @@ public class Main {
         String str1 = sc.nextLine();
         String str2 = sc.nextLine();
         int cnt = 0;
-        for(int i=0;i<=100;i++){
-           cnt++;
+        for(int i=0;i<str1.length();i++){
+           
            if(str1.charAt(i) == str2.charAt(0)){
-            break;
+            cnt++;
            }
         }
-        System.out.println(cnt+1);
+        System.out.println(cnt);
     }
 }
