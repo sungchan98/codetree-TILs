@@ -1,4 +1,3 @@
-package algorithm.test.codetree;
 import java.util.Scanner;
 
 public class Main {
@@ -18,10 +17,11 @@ public class Main {
     for (int i = 0; i < n; i++) {
       if (word.charAt(0) == arr[i].charAt(0)) {
         cnt++;
+        sum += arr[i].length();
       }
-      sum += arr[i].length();
+      
     }
-    double aver = (double) (sum+1) / n;
+    double aver = (double) sum / cnt;
     System.out.printf("%d %.2f", cnt, aver);
   }
 }
