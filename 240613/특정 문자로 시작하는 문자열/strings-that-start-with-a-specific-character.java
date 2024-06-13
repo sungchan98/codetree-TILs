@@ -20,7 +20,7 @@ public class Main {
       }
       sum += arr[i].length();
     }
-    double aver = sum / n;
+    double aver = (double)sum / n;
     System.out.printf("%d %.2f", cnt, aver);
   }
 }
