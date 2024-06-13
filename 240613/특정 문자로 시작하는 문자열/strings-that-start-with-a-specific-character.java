@@ -1,5 +1,4 @@
 package algorithm.test.codetree;
-
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +21,7 @@ public class Main {
       }
       sum += arr[i].length();
     }
-    double a = (double) sum / n;
-    System.out.printf("%d %.2f", cnt, a);
+    double aver = (double) (sum+1) / n;
+    System.out.printf("%d %.2f", cnt, aver);
   }
 }
