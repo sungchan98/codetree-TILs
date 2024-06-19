@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
     // 여기에 코드를 작성해주세요.
@@ -10,7 +12,7 @@ public class Main {
     int cntEB = 0;
 
 
-    for (int i = 0; i < str.length(); i++) {
+    for (int i = 0; i < str.length()-1; i++) {
       if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'e') {
         cntEE++;
       } else if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'b') {
