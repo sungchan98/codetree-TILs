@@ -8,7 +8,7 @@ public class Main {
     String s = sc.next();
     char[] arr = s.toCharArray();
     int q = sc.nextInt();
-    char[] arr2 = new char[q];
+
 
     for (int i = 0; i < q; i++) {
       int a = sc.nextInt();
@@ -20,13 +20,15 @@ public class Main {
         System.out.println(s);
       } else if (a == 3) {
 
-        for (int j = 0; j < s.length() - 1; j++) {
+        for (int j = 0; j < s.length() / 2; j++) {
           // s += s.substring(s.length() - j - 1, s.length() - j);
-
+          char temp = arr[j];
           arr[j] = s.charAt(s.length() - 1 - j);
-          arr2 = arr;
+          arr[s.length() - 1 - j] = temp;
         }
-        System.out.println(arr2);
+        s = new String(arr);
+        System.out.println(s.toString());
+
       }
     }
   }
