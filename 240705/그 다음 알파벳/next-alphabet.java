@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         char c = sc.next().charAt(0);
         int c2 = (int)c + 1;
-        if((int)c2==123){
+        if((int)c2==122){
             c=97;
         }
         System.out.println((char)c2);
