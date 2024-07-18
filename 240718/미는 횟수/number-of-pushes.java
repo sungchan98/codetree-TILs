@@ -11,16 +11,13 @@ public class Main {
         for(int i = 0; i < a.length(); i++) {
             cnt++;
 
-            b = b.substring(a.length() - 1, a.length()) + b.substring(0, a.length() - 1);
-
+            b = b.substring(1) + b.charAt(0);
             if(a.equals(b)){
                 break;
             }
-            if(cnt >= a.length()){
-                cnt = -1;
-            }
+             
 
         }
-        System.out.println(cnt);
-    }
+        System.out.println(cnt < a.length() ? cnt : -1);    
+        }
 }
