@@ -16,6 +16,9 @@ public class Main {
             if(a.equals(b)){
                 break;
             }
+            if(cnt >= a.length()){
+                cnt = -1;
+            }
 
         }
         System.out.println(cnt);
