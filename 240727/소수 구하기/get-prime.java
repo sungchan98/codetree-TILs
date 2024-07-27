@@ -2,20 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
+        // 입력을 받기 위한 Scanner 객체 생성
         Scanner sc = new Scanner(System.in);
-
         int n = sc.nextInt();
-        System.out.print("2 ");
-        for(int i=2; i<=n;i++){
-            int cnt = 0;
-            for(int j=1; j<=i; j++){
-                if(i%j==0){
-                    cnt++;
-                    if(cnt==2 && j != 2){
-                        System.out.print(j + " ");
+        sc.close();
+
+        for (int i = 2; i <= n; i++) {
+            boolean isPrime = true;
+
+            if (i <= 1) {
+                isPrime = false;
+            } else {
+                for (int j = 2; j <= i / 2; j++) {
+                    if (i % j == 0) {
+                        isPrime = false;
+                        break;
                     }
                 }
+            }
+            if (isPrime) {
+                System.out.print(i + " ");
             }
         }
     }
