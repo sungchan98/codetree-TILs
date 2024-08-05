@@ -11,13 +11,26 @@ public class Main {
         
         int num = n*n;
         for (int j = 0; j < n; j++) {
-            if (j % 2 == 0) { 
-                for(int i = n - 1; i >=0; i--){           
-                    arr[i][j] = num--;
+
+            if(n%2 == 1){
+                if (j % 2 == 1) { 
+                    for(int i = n - 1; i >=0; i--){           
+                        arr[i][j] = num--;
+                    }
+                } else {
+                    for (int i = 0; i < n; i++) {
+                        arr[i][j] = num--;
+                    }
                 }
             } else {
-                for (int i = 0; i < n; i++) {
-                    arr[i][j] = num--;
+                if (j % 2 == 0) { 
+                    for(int i = n - 1; i >=0; i--){           
+                        arr[i][j] = num--;
+                    }
+                } else {
+                    for (int i = 0; i < n; i++) {
+                        arr[i][j] = num--;
+                    }
                 }
             }
         }
