@@ -10,20 +10,20 @@ public class Main {
             arr[i] = sc.nextInt(); 
         }
 
-        int INT_MIN = Integer.MIN_VALUE;
-        int maxVal = INT_MIN;
-        int maxVal2 = INT_MIN;
+        int maxVal = Integer.MIN_VALUE;
+        int maxVal2 = Integer.MIN_VALUE;
         
         for(int i = 0; i < n; i++) {
             if(arr[i] > maxVal){
                 maxVal2 = maxVal; 
                 maxVal = arr[i];  
             } else if(arr[i] > maxVal2 && arr[i] < maxVal){
-                maxVal2 = arr[i];
+                maxVal2 = arr[i]; 
+            } else if(arr[i] == maxVal) {
+                maxVal2 = maxVal; 
             }
         }
-
-            System.out.println(maxVal + " " + maxVal2);
-        
+       
+        System.out.println(maxVal + " " + maxVal2);
     }
 }
