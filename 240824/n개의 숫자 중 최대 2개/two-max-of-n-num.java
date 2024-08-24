@@ -21,7 +21,7 @@ public class Main {
         }
 
         for(int i = 0; i < n; i++) {
-            if(arr[i] >= maxVal2 && arr[i] < maxVal){
+            if(arr[i] >= maxVal2 && arr[i] <= maxVal){
                 maxVal2 = arr[i];
             }
         }
