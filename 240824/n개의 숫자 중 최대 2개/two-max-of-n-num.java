@@ -15,16 +15,15 @@ public class Main {
         int maxVal2 = INT_MIN;
         
         for(int i = 0; i < n; i++) {
-            if(arr[i] >= maxVal){
-                maxVal = arr[i];
-            }
-        }
-
-        for(int i = 0; i < n; i++) {
-            if(arr[i] >= maxVal2 && arr[i] <= maxVal){
+            if(arr[i] > maxVal){
+                maxVal2 = maxVal; 
+                maxVal = arr[i];  
+            } else if(arr[i] > maxVal2 && arr[i] < maxVal){
                 maxVal2 = arr[i];
             }
         }
-        System.out.println(maxVal + " " + maxVal2);
+
+            System.out.println(maxVal + " " + maxVal2);
+        
     }
 }
