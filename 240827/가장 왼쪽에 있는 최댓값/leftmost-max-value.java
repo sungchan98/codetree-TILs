@@ -15,20 +15,20 @@ public class Main {
       int maxVal = 0;
       int idx = 0;
 
-      for (int i = 0; i < n - 1; i++) {
+      for (int i = 0; i < n; i++) {
         if (arr[i] >= maxVal) {
           maxVal = arr[i];
         }
       }
 
-      for (int i = 0; i < n - 1; i++) {
+      for (int i = 0; i < n; i++) {
         if (arr[i] == maxVal) {
           idx = i;
           break;
         }
       }
 
-      n = idx;
+      n = idx - 1;
       System.out.print(idx + 1 + " ");
       if (idx == 0) {
         break;
