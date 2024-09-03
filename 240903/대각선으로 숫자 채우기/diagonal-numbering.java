@@ -1,5 +1,3 @@
-package algorithm.test.baekjoon.level04.ex06;
-
 import java.util.Scanner;
 
 public class Main {
